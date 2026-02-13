@@ -33,7 +33,7 @@ GitHub Actions automatically builds and pushes Docker images to GitHub Container
 - Pushes to `main` branch
 - Version tags (e.g., `v1.0.0`)
 
-Images available at: `ghcr.io/YOUR_USERNAME/<app-name>`
+Images available at: `ghcr.io/johanson1988/<app-name>`
 
 ## Deployment
 
