@@ -1,13 +1,13 @@
-# My Application
+# Hello Barsa Test
 
 Simple static HTML application demonstrating GitOps deployment with ArgoCD.
 
 ## Structure
 
 ```
-<app-name>/
+hello-barsa-test-to-delete/
 ├── src/
-│   ├── index.html       # Main HTML page
+│   ├── index.html       # Main HTML page (with CSS effects)
 │   └── nginx.conf       # Nginx configuration
 ├── .github/
 │   └── workflows/
@@ -21,8 +21,8 @@ Simple static HTML application demonstrating GitOps deployment with ArgoCD.
 Build and run:
 
 ```bash
-docker build -t $(basename $PWD):local .
-docker run -p 8080:80 $(basename $PWD):local
+docker build -t hello-barsa:local .
+docker run -p 8080:80 hello-barsa:local
 ```
 
 Visit: http://localhost:8080
@@ -33,7 +33,7 @@ GitHub Actions automatically builds and pushes Docker images to GitHub Container
 - Pushes to `main` branch
 - Version tags (e.g., `v1.0.0`)
 
-Images available at: `ghcr.io/johanson1988/<app-name>`
+Images available at: `ghcr.io/johanson1988/hello-barsa-test-to-delete`
 
 ## Deployment
 
