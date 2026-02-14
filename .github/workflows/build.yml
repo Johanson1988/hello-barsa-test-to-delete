@@ -121,8 +121,8 @@ jobs:
           else
             git commit -m "chore(${{ github.event.repository.name }}): deploy sha-${{ needs.build.outputs.short_sha }}
 
-Triggered by: ${{ github.repository }}@${{ github.sha }}
-Message: ${{ github.event.head_commit.message }}"
+          Triggered by: ${{ github.repository }}@${{ github.sha }}
+          Message: ${{ github.event.head_commit.message }}"
             
             git push
             echo "✅ Successfully updated infra-live"
